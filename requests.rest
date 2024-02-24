@@ -1,18 +1,37 @@
 ###
 
 GET http://localhost:3000/products
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic3VkaGkiLCJpYXQiOjE3MDU3MjI4OTZ9.8KGJuIosdMWPJvlZinh8-F4sz8OoUO_My77f1rhNxvw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUmludHUiLCJwYXNzd29yZCI6InBhc3N3b3JkIiwiaWF0IjoxNzA4NzcwNjk3LCJleHAiOjE3MDg3NzEyOTd9.rHmzMEGlmE9bTHolMnigyCw1XazMrdRP9YOaNiM5XpA
 
 ###
 
 GET http://localhost:3000/cart
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic3VkaGkiLCJpYXQiOjE3MDU3MjI4OTZ9.8KGJuIosdMWPJvlZinh8-F4sz8OoUO_My77f1rhNxvw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUmludHUiLCJwYXNzd29yZCI6InBhc3N3b3JkIiwiaWF0IjoxNzA2NzUxOTc1fQ.0NNV_EXCFEfs87HOzX7XhRpz5XEMHXmYQxR49oOPxkc
 
 ###
 
-POST http://localhost:4000/login
+POST http://localhost:3000/signup
 Content-Type: application/json
 
 {
-    "username":"sudhi"
+    "name":"Rintu",
+    "email":"rintu@gmail.com",
+    "password":"password"
+}
+
+###
+
+GET http://localhost:3000/user/getAllUsers
+
+###
+
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "name":"Rintu",
+    "password":"password"
 }

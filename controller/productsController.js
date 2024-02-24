@@ -1,7 +1,10 @@
 import { productData } from "../data/productData.js";
+import { fetchProducts } from "../services/productsService.js";
 
-const getProducts = (req, res) => {
-  res.json(productData);
+const getProducts = async (req, res) => {
+  const products = await fetchProducts();
+  console.log("Data fetched from API");
+  res.json(products);
 };
 
 const productsController = {
